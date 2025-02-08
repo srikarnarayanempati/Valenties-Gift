@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing" class="content-wrapper">
+        <h1 class="mb-4">Happy Valentines Week ❤️  Baby</h1>
+        <button class="btn btn-danger btn-custom" onclick="startVerification()">Open Me</button>
+        <audio id="bg-music" src="your-audio-file.mp3" loop></audio>
+        <button id="music-toggle" class="btn btn-outline-light music-btn" onclick="toggleMusic()">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+    </div>
+
+    <!-- Verification Steps -->
+    <div id="verification-1" class="content-wrapper d-none">
+        <h2>Do You Love Me? 🥺</h2>
+        <img src="your-image-1.jpg" alt="Do You Love Me?" class="credit-card-image">
+        <div>
+            <button class="btn btn-success btn-custom" onclick="showVerification(2)">Yes</button>
+            <button class="btn btn-danger btn-custom" id="no-btn-1" onmouseover="moveButton('no-btn-1')">No</button>
+        </div>
+        <p>Note : No click chesthe Thantha</p>
+    </div>
+
+    <div id="verification-2" class="content-wrapper d-none">
+        <h2>Will You Be Mine Forever? 🫴</h2>
+        <img src="your-image-2.jpg" alt="Will You Be Mine Forever?" class="credit-card-image">
+        <div>
+            <button class="btn btn-success btn-custom" onclick="showVerification(3)">Yes</button>
+            <button class="btn btn-danger btn-custom" id="no-btn-2" onmouseover="moveButton('no-btn-2')">No</button>
+            <p>Undipovachu kadhe naatho 👉👈</p>
+        </div>
+    </div>
+
+    <div id="verification-3" class="content-wrapper d-none">
+        <h2>Shall We Marry? 💍</h2>
+        <img src="your-image-3.jpg" alt="Shall We Marry?" class="credit-card-image">
+        <div>
+            <button class="btn btn-success btn-custom" onclick="sayYes()">Yes</button>
+            <button class="btn btn-danger btn-custom" id="no-btn-3" onmouseover="moveButton('no-btn-3')">No</button>
+            <p>Chesukundhame Pleaseeeee 🥺</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

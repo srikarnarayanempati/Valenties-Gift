@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8d7da; /* Valentine pink */
+    color: #721c24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.credit-card-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.btn-custom {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    z-index: 1000;
+    border: none;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .credit-card-image {
+        max-width: 200px;
+    }
+}
